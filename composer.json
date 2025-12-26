@@ -1,0 +1,38 @@
+{
+    "name": "2amigos/yii2-config-kit",
+    "description": "Configuration kit for Yii applications",
+    "keywords": ["yii2", "kit", "configuration", "project template"],
+    "homepage": "https://2amigos.us/",
+    "type": "extension",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/2amigos/yii2-config-kit/issues?state=open",
+        "source": "https://github.com/2amigos/yii2-config-kit"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.0",
+        "league/container": "^2.2",
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0",
+        "squizlabs/php_codesniffer": "^2.7",
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "phpmd/phpmd": "^2.4"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "autoload" : {
+        "psr-4": {
+            "Da\\Config\\": ["./src"]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Da\\Config\\Tests\\": "./tests"
+        }
+    }
+}
